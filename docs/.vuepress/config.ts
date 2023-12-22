@@ -1,17 +1,74 @@
 import {defineUserConfig} from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 export default defineUserConfig({
+    bundler: undefined,
 
     port: 8081,
     lang: 'zh-CN',
     title: 'coderliu',
-    description: '这是我的第一个 VuePress 站点',
+    description: '一款开箱即用的快速构建web应用的脚手架',
+    head: [
+        // 站点图标
+        ["link", {rel: "icon", href: "/favicon.ico"}],
+        // SEO
+        [
+            "meta",
+            {
+                name: "keywords",
+                content:
+                    "coderliu是一款基于jdk11的web程序脚手架。",
+            },
+        ],
+        // 百度统计
+        [
+            "script",
+            {},
+            `
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2675818a983a3131404cee835018f016";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      `,
+        ],
+    ],
+    // permalink: "/:slug",
+    //
+    // // 监听文件变化，热更新
+    // extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
+    // markdown: {
+    //     // 开启代码块的行号
+    //     lineNumbers: true,
+    //     // 支持 4 级以上的标题渲染
+    //     extractHeaders: ["h2", "h3", "h4", "h5", "h6"],
+    // },
+    //
     // theme: defaultTheme({
-    // }),
-
-    themeConfig: {
-        logo: 'https://excalidraw.com/apple-touch-icon.png',
-    }
+    //     logo: '/logo.png',
+    //     navbar: [
+    //         {
+    //             text: '文档',
+    //             link: '/docs/introduce/'
+    //         },
+    //         {
+    //             text: 'GitHub',
+    //             link: '/docs/introduce/'
+    //         },
+    //     ],
+    //     sidebar: {
+    //         '/docs/': [
+    //             {
+    //                 text: '介绍',
+    //                 children: [
+    //                     '/docs/introduce/',
+    //                     '/docs/introduce/start',
+    //                     '/docs/introduce/config'
+    //                 ]
+    //             }]
+    //     }
+    // })
 })
 
 

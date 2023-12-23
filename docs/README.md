@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: images/logo.jpg
+heroImage: images/logo.png
 heroText: coderliu
 tagline: 一款开箱即用的快速构建web应用的脚手架
 actions:

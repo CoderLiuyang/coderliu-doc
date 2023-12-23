@@ -27,25 +27,25 @@ export default defineUserConfig({
             `
         var _hmt = _hmt || [];
         (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?2675818a983a3131404cee835018f016";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
+         var hm = document.createElement("script");
+         hm.src = "https://hm.baidu.com/hm.js?1ac5f426ffb8c4cd0c2d016e41fc267a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
         })();
-      `,
+      `
         ],
     ],
-    permalink: "/:slug",
-    //
-    // // 监听文件变化，热更新
-    extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
+   permalink: "/:slug",
+
+    // 监听文件变化，热更新
+   extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
     markdown: {
         // 开启代码块的行号
         lineNumbers: true,
         // 支持 4 级以上的标题渲染
         extractHeaders: ["h2", "h3", "h4", "h5", "h6"],
     },
-    //
+
     theme: defaultTheme({
         logo: 'images/logo.png',
         navbar: [

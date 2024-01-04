@@ -19,7 +19,7 @@ export default defineUserConfig({
                 content:
                     "coderliu是一款基于jdk11的web程序脚手架。",
             },
-        ],
+        ],   
         // 百度统计
         [
             "script",

@@ -19,7 +19,7 @@ export default defineUserConfig({
                 content:
                     "coderliu是一款基于jdk11的web程序脚手架。",
             },
-        ],   
+        ],
         // 百度统计
         [
             "script",
@@ -51,7 +51,7 @@ export default defineUserConfig({
         navbar: [
             {
                 text: '文档',
-                link: '/foo/'
+                link: '/foo/base'
             },
             {
                 text: 'Gitee',
@@ -68,11 +68,21 @@ export default defineUserConfig({
                     text: '介绍',
                     children: [
                         {
+                            text: '项目简介',
+                            link: '/foo/base'
+                        },
+                        {
                             text: '快速开始',
                             link: '/foo/one'
                         },
-                        '/docs/introduce/start',
-                        '/docs/introduce/config'
+                        {
+                            text: '详细指南',
+                            link: '/foo/two'
+                        },
+                        {
+                            text: '常见问题',
+                            link: '/foo/three'
+                        }
                     ]
                 }]
         }

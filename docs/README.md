@@ -8,7 +8,7 @@ actions:
     link: /foo/one
     type: primary
   - text: 项目简介
-    link: /foo
+    link: /foo/base
     type: secondary
 features:
 - title: 开箱即用

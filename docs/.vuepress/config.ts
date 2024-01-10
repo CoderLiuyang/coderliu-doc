@@ -7,6 +7,7 @@ export default defineUserConfig({
     port: 8081,
     lang: 'zh-CN',
     title: 'coderliu',
+
     description: '一款开箱即用的快速构建web应用的脚手架',
     head: [
         // 站点图标
@@ -35,10 +36,10 @@ export default defineUserConfig({
       `
         ],
     ],
-   permalink: "/:slug",
+    permalink: "/:slug",
 
     // 监听文件变化，热更新
-   extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
+    extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
     markdown: {
         // 开启代码块的行号
         lineNumbers: true,
